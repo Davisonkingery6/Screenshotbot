@@ -1,0 +1,11 @@
+===== MONITOR CONFIGURATION =====
+
+At line:1 char:12
++ Add-Type @'`nusing System;using System.Runtime.InteropServices;public ...
++            ~
+No characters are allowed after a here-string header but before the end of the line.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedCharactersAfterHereStringHeader
+
+
+Press any key to continue . . .
