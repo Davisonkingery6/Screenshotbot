@@ -1,5 +1,11 @@
 @echo off
-echo Testing both screens separately...
+color 0E
+echo =====================================
+echo    TESTING SCREEN 2 CAPTURE
+echo    Position: Starting at X=1280
+echo    Size: 2560 x 720
+echo =====================================
 echo.
-powershell -ExecutionPolicy Bypass -Command "Add-Type -AssemblyName System.Drawing; Write-Host 'Screen 1 (0,0 - 1280x720):' -F Yellow; $b1=New-Object System.Drawing.Bitmap(1280,720); $g1=[System.Drawing.Graphics]::FromImage($b1); $g1.CopyFromScreen(0,0,0,0,$b1.Size); md C:\Screenshots -ea 0; $b1.Save('C:\Screenshots\TEST_SCREEN1.png'); $g1.Dispose(); $b1.Dispose(); Write-Host 'Saved: TEST_SCREEN1.png' -F Green; Write-Host ''; Write-Host 'Screen 2 (1280,0 - 2560x720):' -F Cyan; $b2=New-Object System.Drawing.Bitmap(2560,720); $g2=[System.Drawing.Graphics]::FromImage($b2); $g2.CopyFromScreen(1280,0,0,0,$b2.Size); $b2.Save('C:\Screenshots\TEST_SCREEN2.png'); $g2.Dispose(); $b2.Dispose(); Write-Host 'Saved: TEST_SCREEN2.png' -F Green"
+powershell -ExecutionPolicy Bypass -Command "Add-Type -AssemblyName System.Drawing; Write-Host 'TEST: Capturing Screen 2 (Left Monitor)' -F Yellow; Write-Host 'Position: X=1280, Y=0' -F Cyan; Write-Host 'Size: 2560 x 720' -F Cyan; Write-Host ''; Write-Host 'Capturing...' -F Green; $bmp=New-Object System.Drawing.Bitmap(2560,720); $g=[System.Drawing.Graphics]::FromImage($bmp); $g.CopyFromScreen(1280,0,0,0,[System.Drawing.Size]::new(2560,720)); md C:\Screenshots -ea 0; $f=\"C:\Screenshots\TEST_SCREEN2_$(Get-Date -F yyyyMMdd_HHmmss).png\"; $bmp.Save($f); $g.Dispose(); $bmp.Dispose(); Write-Host ''; Write-Host 'SUCCESS!' -F Green -BackgroundColor DarkGreen; Write-Host \"Saved to: $f\" -F Yellow; Write-Host ''; Write-Host 'Check the screenshot - it should show Screen 2 (left monitor)' -F White"
+echo.
 pause
