@@ -1,7 +1,28 @@
-SCREEN 1 (PRIMARY - RIGHT):
-  Position: X = 0, Y = 0
-  Size: 1280 x 720
-SCREEN 2 (LEFT):
-  Position: X = 2560, Y = 0
-  Size: 1280 x 720
+Creating DPI-aware PowerShell session...
+
+At line:1 char:29
++ Add-Type -TypeDefinition @' `
++                             ~
+No characters are allowed after a here-string header but before the end of the line.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedCharactersAfterHereStringHeader
+
+'using' is not recognized as an internal or external command,
+operable program or batch file.
+'using' is not recognized as an internal or external command,
+operable program or batch file.
+'public' is not recognized as an internal or external command,
+operable program or batch file.
+'[DllImport' is not recognized as an internal or external command,
+operable program or batch file.
+'public' is not recognized as an internal or external command,
+operable program or batch file.
+'[DllImport' is not recognized as an internal or external command,
+operable program or batch file.
+'public' is not recognized as an internal or external command,
+operable program or batch file.
+'}' is not recognized as an internal or external command,
+operable program or batch file.
+''@' is not recognized as an internal or external command,
+operable program or batch file.
 Press any key to continue . . .
