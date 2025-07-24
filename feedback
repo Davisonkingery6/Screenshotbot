@@ -33,3 +33,20 @@ No characters are allowed after a here-string header but before the end of the l
 
 PS C:\ScreenshotBot>
 PS C:\ScreenshotBot>
+
+
+=== DETAILED MONITOR INFO ===
+
+At line:1 char:47
++ Add-Type -A System.Windows.Forms; Add-Type @' `n using System; `n usi ...
++                                               ~
+No characters are allowed after a here-string header but before the end of the line.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedCharactersAfterHereStringHeader
+
+
+If Monitor 2 shows as 1280x720, the scripts will work correctly.
+If it shows as 640x360, you have 200 scaling.
+
+Press any key to continue . . .
+
