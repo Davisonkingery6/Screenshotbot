@@ -1,11 +1,35 @@
-===== MONITOR CONFIGURATION =====
+Testing Monitor 2 capture (1280x720)...
 
-At line:1 char:12
-+ Add-Type @'`nusing System;using System.Runtime.InteropServices;public ...
-+            ~
+At line:1 char:169
++ ... sembly]::LoadWithPartialName('System.Drawing'); Add-Type @' `n using  ...
++                                                                 ~
 No characters are allowed after a here-string header but before the end of the line.
     + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
     + FullyQualifiedErrorId : UnexpectedCharactersAfterHereStringHeader
 
 
 Press any key to continue . . .
+
+
+
+
+
+
+
+
+
+=====================================
+   SCREENSHOT BOT - MONITOR 2
+   Resolution: 1280x720
+   Times: 4pm, 5pm, 6pm, 7pm
+=====================================
+
+At line:1 char:129
++ ... dd-Type -A System.Windows.Forms,System.Drawing; Add-Type @' `n using  ...
++                                                                 ~
+No characters are allowed after a here-string header but before the end of the line.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedCharactersAfterHereStringHeader
+
+PS C:\ScreenshotBot>
+PS C:\ScreenshotBot>
