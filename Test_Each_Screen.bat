@@ -1,5 +1,0 @@
-@echo off
-echo Testing each screen separately...
-echo.
-powershell -ExecutionPolicy Bypass -Command "Add-Type -AssemblyName System.Windows.Forms,System.Drawing; Write-Host 'TEST 1: Capture from 0,0 (Should be Screen 1)' -F Yellow; $bmp1=New-Object Drawing.Bitmap 1920,1080; $g1=[Drawing.Graphics]::FromImage($bmp1); $g1.CopyFromScreen(0,0,0,0,[Drawing.Size]::new(1920,1080)); md C:\Screenshots -ea 0; $bmp1.Save('C:\Screenshots\TEST_Position_0_0.png'); $g1.Dispose(); $bmp1.Dispose(); Write-Host 'Saved: TEST_Position_0_0.png' -F Green; Write-Host ''; Write-Host 'TEST 2: Capture from 2560,0 (Should be Screen 2)' -F Yellow; $bmp2=New-Object Drawing.Bitmap 1920,1080; $g2=[Drawing.Graphics]::FromImage($bmp2); $g2.CopyFromScreen(2560,0,0,0,[Drawing.Size]::new(1920,1080)); $bmp2.Save('C:\Screenshots\TEST_Position_2560_0.png'); $g2.Dispose(); $bmp2.Dispose(); Write-Host 'Saved: TEST_Position_2560_0.png' -F Green; Write-Host ''; Write-Host 'CHECK BOTH IMAGES TO SEE WHICH IS SCREEN 1!' -F White -B DarkRed"
-pause
