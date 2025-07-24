@@ -1,28 +1,14 @@
-Creating DPI-aware PowerShell session...
+Checking virtual screen setup...
 
-At line:1 char:29
-+ Add-Type -TypeDefinition @' `
-+                             ~
-No characters are allowed after a here-string header but before the end of the line.
-    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
-    + FullyQualifiedErrorId : UnexpectedCharactersAfterHereStringHeader
+VIRTUAL SCREEN:
+  Total Size: 3840 x 720
+  Starting at: X=0, Y=0
 
-'using' is not recognized as an internal or external command,
-operable program or batch file.
-'using' is not recognized as an internal or external command,
-operable program or batch file.
-'public' is not recognized as an internal or external command,
-operable program or batch file.
-'[DllImport' is not recognized as an internal or external command,
-operable program or batch file.
-'public' is not recognized as an internal or external command,
-operable program or batch file.
-'[DllImport' is not recognized as an internal or external command,
-operable program or batch file.
-'public' is not recognized as an internal or external command,
-operable program or batch file.
-'}' is not recognized as an internal or external command,
-operable program or batch file.
-''@' is not recognized as an internal or external command,
-operable program or batch file.
+PRIMARY MONITOR:
+  Size: 1280 x 720
+
+This tells us the actual desktop size Windows sees
 Press any key to continue . . .
+
+
+ any key to continue . . .
